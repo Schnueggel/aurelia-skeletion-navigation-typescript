@@ -1,9 +1,9 @@
 # aurelia-skeleton-navigation-typescript
 
 
-This skeleton is an extension of [aurelia-skeletion-app](https://github.com/aurelia/skeleton-navigation) the skeletion for [Aurelia](http://www.aurelia.io/). It sets up a standard navigation-style app using gulp to build your ES6 code with the Babel compiler. Karma/Protractor/Jasmine testing is also configured.
+This skeleton is an extension of [aurelia-skeletion-app](https://github.com/aurelia/skeleton-navigation) the skeletion for [Aurelia](http://www.aurelia.io/). 
 
-This App replaces the babel transpiler with Typescript. This is work in work progress see [Todo](#Todo)
+This App replaces the babel transpiler with Typescript. This is work in work progress see [Todo](#Todo) for what will come soon.
 
 ## Running The App
 
