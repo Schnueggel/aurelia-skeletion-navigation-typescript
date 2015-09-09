@@ -5,11 +5,12 @@
   "keywords": [
     "aurelia",
     "navigation",
-    "skeleton"
+    "skeleton",
+    "TypeScript"
   ],
   "homepage": "http://aurelia.io",
   "bugs": {
-    "url": "https://github.com/aurelia/skeleton-navigation/issues"
+    "url": "https://github.com/Schnueggel/aurelia-skeletion-navigation-typescript/issues"
   },
   "license": "MIT",
   "author": [
@@ -19,7 +20,7 @@
   "main": "dist/commonjs/index.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/aurelia/skeleton-navigation"
+    "url": "https://github.com/Schnueggel/aurelia-skeletion-navigation-typescript.git"
   },
   "scripts": {
     "test": "gulp test",
