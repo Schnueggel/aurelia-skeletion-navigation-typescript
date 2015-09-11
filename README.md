@@ -116,8 +116,6 @@ Integrate React
 
 Integrate RxJS
 
-Integrate React-Material
-
 Integrate PostCSS
 
 Implement Data- and View-Model
