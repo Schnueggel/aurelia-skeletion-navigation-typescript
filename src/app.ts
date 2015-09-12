@@ -1,11 +1,11 @@
 import 'bootstrap';
 import 'bootstrap/css/bootstrap.css!';
-
+import {RouterConfiguration, Router} from 'aurelia-router';
 export class App {
 
   router: any;
 
-  configureRouter(config, router){
+  configureRouter(config: RouterConfiguration, router: Router){
     config.title = 'Aurelia';
     config.map([
       { route: ['','welcome'],  name: 'welcome',      moduleId: 'welcome',      nav: true, title:'Welcome' },
