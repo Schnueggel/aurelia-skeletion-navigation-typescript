@@ -5,7 +5,7 @@ var outputRoot = 'dist/';
 
 module.exports = {
   root: appRoot,
-  source: [appRoot + '**/*.ts'],
+  source: [appRoot + '**/*.ts', appRoot + '**/*.tsx'],
   dts: ['jspm_packages/aurelia/**/*.d.ts','typings/tsd.d.ts'],
   html: appRoot + '**/*.html',
   style: 'styles/**/*.css',
