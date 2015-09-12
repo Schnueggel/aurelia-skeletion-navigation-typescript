@@ -46,7 +46,10 @@ System.config({
     "expect": "npm:expect@1.9.0",
     "fetch": "github:github/fetch@0.9.0",
     "font-awesome": "npm:font-awesome@4.4.0",
+    "material-ui": "npm:material-ui@0.11.0",
     "react": "npm:react@0.13.3",
+    "react-tap-event-plugin": "npm:react-tap-event-plugin@0.1.7",
+
     "github:aurelia/animator-css@0.16.0": {
       "aurelia-metadata": "github:aurelia/metadata@0.8.0",
       "aurelia-templating": "github:aurelia/templating@0.15.1"
@@ -290,6 +293,13 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.1",
       "source-map": "npm:source-map@0.1.31"
     },
+    "npm:material-ui@0.11.0": {
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.1",
+      "react": "npm:react@0.12.2",
+      "react-draggable2": "npm:react-draggable2@0.5.1",
+      "react-tap-event-plugin": "npm:react-tap-event-plugin@0.1.7"
+    },
     "npm:os-browserify@0.1.2": {
       "os": "github:jspm/nodelibs-os@0.1.0"
     },
@@ -297,6 +307,15 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:punycode@1.3.2": {
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:react-tap-event-plugin@0.1.7": {
+      "process": "github:jspm/nodelibs-process@0.1.1",
+      "react": "npm:react@0.12.2"
+    },
+    "npm:react@0.12.2": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "envify": "npm:envify@3.4.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:react@0.13.3": {
