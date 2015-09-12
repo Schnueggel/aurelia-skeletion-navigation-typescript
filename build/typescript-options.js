@@ -4,5 +4,6 @@ module.exports = {
   experimentalDecorators: true,
   target: 'ES5',
   noLib: false,
+  jsx: 'react',
   typescript : require('typescript')
 };
