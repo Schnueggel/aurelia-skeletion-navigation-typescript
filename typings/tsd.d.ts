@@ -19,3 +19,6 @@
 /// <reference path="aurelia/aurelia-router.d.ts" />
 /// <reference path="aurelia/aurelia-task-queue.d.ts" />
 /// <reference path="aurelia/aurelia-templating.d.ts" />
+/// <reference path="es6-promise/es6-promise.d.ts" />
+/// <reference path="es6-promises/es6-promises.d.ts" />
+/// <reference path="react/react.d.ts" />

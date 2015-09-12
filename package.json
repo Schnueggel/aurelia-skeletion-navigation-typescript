@@ -2,6 +2,7 @@
   "name": "aurelia-skeleton-navigation-typescript",
   "version": "0.18.0",
   "description": "A starter kit for building a standard navigation-style app with Aurelia. Using Typescript, React, RxJS, postcss and",
+  "typeings": "../src/index",
   "keywords": [
     "aurelia",
     "navigation",

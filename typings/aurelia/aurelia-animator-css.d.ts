@@ -1,5 +1,7 @@
+/// <reference path="../es6-promise/es6-promise.d.ts"/>
 declare module 'aurelia-animator-css' {
-  import { animationEvent, Animator }  from 'aurelia-templating';
+  import { animationEvent, Animator } from 'aurelia-templating';
+
   export interface CssAnimation {
     className: string;
     element: HTMLElement;
