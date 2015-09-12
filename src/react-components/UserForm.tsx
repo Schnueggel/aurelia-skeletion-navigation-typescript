@@ -1,22 +1,14 @@
 /// <reference path="../../typings/react/react.d.ts"/>
 import * as React from 'react';
+import AddUserIntent, {UserData} from '../intents/AddUserIntent';
 
-export class UserFormProps {
-  public firstname:string;
-  public lastname:string;
-  public submit: React.FormEventHandler = () => {};
-}
-
-export class UserFormState {
-  firstname:string;
-  lastname:string;
-}
-export default class UserFormComponent extends React.Component<UserFormProps, any> {
+export default class UserFormComponent extends React.Component<UserData, any> {
   state: any = {
     firstname: '',
     lastname: ''
   };
-  constructor(props:UserFormProps) {
+
+  constructor(props:UserData) {
     super(props);
     this.state.firstname = this.props.firstname;
     this.state.lastname = this.props.lastname;
@@ -39,10 +31,18 @@ export default class UserFormComponent extends React.Component<UserFormProps, an
     });
   }
 
+  handleSubmit() {
+    const userData = new UserData();
+    userData.firstname = this.state.firstname;
+    userData.lastname = this.state.lastname;
+
+    AddUserIntent.addUser(userData);
+  }
+
   render() {
     return (
-      <form role="form" onSubmit={this.props.submit}>
-        <div className="form-group">{console.log("hund")}
+      <form role="form" onSubmit={this.handleSubmit.bind(this)}>
+        <div className="form-group">
           <label htmlFor="fn">Firstname</label>
           <input type="text" value={this.state.firstname} className="form-control" id="fn" placeholder="Firstname" onChange={this.handleFirstnameChange.bind(this)}/>
         </div>
