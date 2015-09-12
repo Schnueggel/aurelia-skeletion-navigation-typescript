@@ -11,11 +11,13 @@ var compilerOptions = require('../typescript-options');
 // by errors from other gulp plugins
 // https://www.npmjs.com/package/gulp-plumber
 gulp.task('build-system', function () {
-  return gulp.src(paths.source.concat(paths.dts))
+  var project = gulptypescript.createProject('tsconfig.json', compilerOptions);
+  var tsResult = project.src()
     .pipe(plumber())
     .pipe(sourcemaps.init({loadMaps: true}))
-    .pipe(gulptypescript(compilerOptions))
-    .pipe(sourcemaps.write({includeContent: true}))
+    .pipe(gulptypescript(project));
+
+    return tsResult.js.pipe(sourcemaps.write({includeContent: true}))
     .pipe(gulp.dest(paths.output));
 });
 

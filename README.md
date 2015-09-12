@@ -77,7 +77,7 @@ jspm install aurelia-router
 3. You can now run the tests with this command:
 
   ```shell
-  karma start
+  karma start 
   ```
 
 ## Running The E2E Tests
